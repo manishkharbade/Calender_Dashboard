@@ -1,0 +1,6 @@
+Start JSON SERVER : npx json-server --watch db.json --port 3000
+
+Installed JSON globally : 
+
+npm i -g json-server
+json-server --watch db.json --port 3000

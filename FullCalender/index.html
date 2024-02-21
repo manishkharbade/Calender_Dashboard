@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Calender</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FullCalendar -->
+</head>
+
+<body>
+
+
+    <button id="addEventBtn" class="px-4 py-2 bg-green-500 text-white rounded-md">Add Event</button>
+    <div id='calendar'></div>
+
+    <!-- Add Event Popup -->
+    <div id="modal" class="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50 hidden z-10">
+        <div class="bg-white p-6 rounded-md">
+            <h2 class="text-xl font-bold mb-4 border-b-2">Add Event</h2>
+            <form id="eventForm">
+                <div class="mb-4">
+                    <label for="eventTitle" class="block font-bold">Title:</label>
+                    <input type="text" id="eventTitle" name="eventTitle" placeholder="Enter title"
+                        class="w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200">
+                </div>
+                <div class="mb-4">
+                    <label for="startTime" class="block font-bold">Start Time:</label>
+                    <input type="datetime-local" id="startTime" name="startTime"
+                        class="w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200">
+                </div>
+                <div class="mb-4">
+                    <label for="endTime" class="block font-bold">End Time:</label>
+                    <input type="datetime-local" id="endTime" name="endTime"
+                        class="w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200">
+                </div>
+                <div class="flex justify-end">
+                    <button type="button" id="closeModalBtn"
+                        class="mr-2 px-4 py-2 bg-red-500 text-white rounded-md">Close</button>
+                    <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-md">Add Event</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Add Event Popup -->
+
+    <!-- Edit Event Popup -->
+    <div id="editModal" class="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50 hidden z-10">
+        <div class="bg-white p-6 rounded-md">
+            <h2 class="text-xl font-bold mb-4 border-b-2">Add Event</h2>
+            <form id="editForm">
+                <div class="mb-4">
+                    <label for="eventTitle" class="block font-bold">Title:</label>
+                    <input type="text" id="eventTitle" name="eventTitle" placeholder="Enter title"
+                        class="w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200">
+                </div>
+                <div class="mb-4">
+                    <label for="startTime" class="block font-bold">Start Time:</label>
+                    <input type="datetime-local" id="startTime" name="startTime"
+                        class="w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200">
+                </div>
+                <div class="mb-4">
+                    <label for="endTime" class="block font-bold">End Time:</label>
+                    <input type="datetime-local" id="endTime" name="endTime"
+                        class="w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200">
+                </div>
+                <div class="flex justify-end">
+                    <button type="button" id="closeModalBtn"
+                        class="mr-2 px-4 py-2 bg-red-500 text-white rounded-md">Close</button>
+                    <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-md">Add Event</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Add Event Popup -->
+
+    <!-- Event Details Popup -->
+    <div id="eventPopup"
+        class="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50 hidden">
+        <div class="bg-white p-8 rounded-lg">
+            <h2 id="eventTitle" class="text-xl font-bold mb-4"></h2>
+            <p id="eventStart"></p>
+            <p id="eventEnd"></p>
+            <button id="editEventBtn" class="px-4 py-2 bg-blue-500 text-white rounded-md mt-4">Edit</button>
+            <button id="deleteEventBtn" class="px-4 py-2 bg-red-500 text-white rounded-md mt-4"><i
+                    class="fa-solid fa-trash"></i></button>
+            <button id="closePopupBtn" class="px-4 py-2 bg-gray-500 text-white rounded-md mt-4">Close</button>
+        </div>
+    </div>
+    <!-- Event Details Popup -->
+
+
+
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js
+    "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/9926a210b9.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

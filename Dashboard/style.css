@@ -1,0 +1,383 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fbf7f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left-side {
+    width: 240px;
+    min-height: calc(98% - 60px);
+}
+
+.logo {
+    position: absolute;
+    top: 45px;
+    /* left: 50px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+.logo-img {
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.logo-text {
+    padding: 0.75rem;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.drop-down {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.box1 {
+    background-color: #F4B183;
+    height: 7px;
+    width: 7px;
+    margin-right: 7px;
+}
+
+.box2 {
+    background-color: #E8A9A9;
+    height: 7px;
+    width: 7px;
+    margin-right: 7px;
+}
+
+.link-text {
+    font-weight: bold;
+}
+
+.options {
+    font-size: 14px;
+    color: #979797;
+}
+
+.box3 {
+    background-color: #322653;
+    height: 7px;
+    width: 7px;
+    margin-right: 7px;
+}
+
+.logout {
+    position: absolute;
+    bottom: 50px;
+    padding-left: 30px;
+
+}
+
+.lists {
+    position: absolute;
+    top: 135px;
+    padding: 7px;
+}
+
+.lists ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.lists ul li {
+    padding-bottom: 20px;
+}
+
+.lists ul li span {
+    padding-right: 17px;
+}
+
+dl {
+    padding-bottom: 10px;
+}
+
+dl dt {
+    padding-bottom: 10px;
+}
+
+dl dt span {
+    padding-right: 15px;
+}
+
+dd {
+    padding-bottom: 10px;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-icon {
+    margin-right: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid-div {
+    height: 97vh;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.check {
+    position: relative;
+    margin-top: 4px;
+    margin-right: 10px;
+    height: 17px;
+    width: 17px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.check-icon {
+    position: absolute;
+    left: 4px;
+    color: #95877f;
+}
+
+.add-icon {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.card-img {
+    background: url(Assets/md1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-img1 {
+    background: url(Assets/md2.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 210px;
+    width: 47%
+}
+
+.card-img2 {
+    background: url(Assets/md1.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 210px;
+    min-width: 47%
+}
+
+.mid-div1 {
+    height: 97vh;
+    min-width: 35rem !important;
+    padding: 25px;
+}
+
+.card1 {
+    margin-top: 20px;
+    border: 1px solid #c3c3c3;
+    height: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+.icons {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #F4B183;
+    margin-right: 5px;
+}
+
+.icons1 {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.icons2 {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #9cb8b3;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.boxx1 {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e8e8;
+    padding: 10px;
+}
+
+.boxx2 {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbeee4;
+    padding: 10px;
+}
+
+.boxx3 {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7ecea;
+    padding: 10px;
+}
+
+.boxx4 {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ebea;
+    padding: 10px;
+}
+
+.boxx1-icon {
+    color: #475f87;
+    font-size: 25px;
+}
+
+.boxx2-icon {
+    color: #fabd8d;
+    font-size: 25px;
+}
+
+.boxx3-icon {
+    color: #e1a9af;
+    font-size: 25px;
+}
+
+.boxx4-icon {
+    color: #99aeb3;
+    font-size: 25px;
+}
+
+.right-side {
+    margin-left: 35px !important;
+    border-left: 1px solid grey;
+    width: 10rem;
+    min-height: 95vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+.rightpart {
+    top: 2rem;
+    left: 4.6rem;
+}
+
+.right-text {
+    position: absolute;
+    top: 6rem;
+    left: 3.9rem;
+}
+
+.right-icons-sec {
+    position: absolute;
+    bottom: 0.2rem;
+    padding: 1rem;
+    left: 4rem;
+}
+
+.right-icon1 {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.right-icon2 {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.right-icon3 {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
